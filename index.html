@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#060914">
+  <meta name="description" content="ANIS — a personal archive of music, screens, travel, technology and the rest.">
+  <title>ANIS — personal archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" data-scroll="home"><span class="brand-mark">A</span><span><b>ANIS</b><small>not a résumé</small></span></a>
+    <nav>
+      <a href="#music" data-scroll="music">MUSIC</a>
+      <a href="#screens" data-scroll="screens">SCREENS</a>
+      <a href="#travel" data-scroll="travel">TRAVEL</a>
+      <a href="#tech" data-scroll="tech">TECH</a>
+      <a href="#rest" data-scroll="rest">THE REST</a>
+    </nav>
+    <div class="place"><i></i> JIJEL, DZ</div>
+  </header>
+
+  <main>
+    <section id="home" class="hero page-section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">✣ A PERSONAL WEBSITE WITH NO RÉSUMÉ ENERGY</div>
+        <h1>ANIS<span>.</span></h1>
+        <p class="hero-line">i don't give a f***.<br><em>fre sent me to piss the world off.</em></p>
+        <p class="hero-sub">Computer science, hip-hop, questionable sleep schedules, places I want to see, and whatever else refuses to stay in one category.</p>
+        <button class="outline-btn" data-scroll="music">START SOMEWHERE <b>↘</b></button>
+      </div>
+      <div class="hero-photo reveal delay-1">
+        <div class="tape tape-a"></div><div class="tape tape-b"></div>
+        <img src="assets/anis-board.png" alt="Anis personal moodboard">
+        <span class="photo-caption">contents / real life</span>
+        <span class="stamp">NO<br>FILTER</span>
+      </div>
+      <div class="hero-strip">
+        <button data-scroll="music">MUSIC <b>›</b></button>
+        <button data-scroll="screens">SCREENS <b>›</b></button>
+        <button data-scroll="travel">TRAVEL <b>›</b></button>
+        <button data-scroll="tech">TECH <b>›</b></button>
+        <button data-scroll="rest">THE REST <b>›</b></button>
+      </div>
+    </section>
+
+    <section id="music" class="page-section music-section">
+      <div class="section-head reveal"><span class="eyebrow">THE SOUNDTRACK</span><h2>Music.</h2><p>Not a playlist. A little archive of the stuff that gets stuck in my head.</p></div>
+      <div class="music-hero reveal">
+        <div class="music-visual" style="--img:url('https://images.complex.com/complex/image/upload/v1757612625/sanity-new/GettyImages-159840519_mmqw33.jpg')">
+          <div class="visual-overlay"><span>8 MILE / 2002</span><strong>EMINEM</strong><small>Detroit • rap battles • pressure • words</small></div>
+        </div>
+        <div class="music-copy"><div class="kicker">THE ONE THAT STICKS</div><h3>Real hip hop.<br>Real lyrics.<br>Real shit.</h3><p>Eminem sits at the center of this part of the archive because the appeal isn't just the production. It's the writing: internal rhyme, ridiculous technical control, humor that can turn ugly, and the ability to make a line feel like a punch.</p><button class="solid-btn" data-modal="eminem">OPEN THE EMINEM FILE ↗</button></div>
+      </div>
+      <div class="track-zone reveal"><div class="mini-head"><span>TRACKS I KEEP COMING BACK TO</span><small>click a track</small></div><div id="track-list" class="track-list"></div></div>
+      <div class="era-grid reveal">
+        <article class="era-card"><span>EARLY</span><h3>Slim Shady</h3><p>Chaotic, funny, deliberately offensive, technically sharp. The persona was a weapon as much as it was a character.</p></article>
+        <article class="era-card dark"><span>PEAK</span><h3>Marshall Mathers</h3><p>Huge records, huge pressure, and writing that can jump from ridiculous to brutally personal in the same breath.</p></article>
+        <article class="era-card accent"><span>THE FILM</span><h3>8 Mile</h3><p>A fictionalized Detroit story with a real obsession underneath it: earning your place when everyone is waiting for you to fail.</p></article>
+      </div>
+      <div class="music-note">No lyrics wall here. The songs deserve listening, not a website copying them line by line.</div>
+    </section>
+
+    <section id="screens" class="page-section screens-section">
+      <div class="section-head reveal"><span class="eyebrow">THE SCREEN ARCHIVE</span><h2>Screens.</h2><p>Shows and films I keep thinking about after the credits.</p></div>
+      <div id="screen-list" class="screen-list"></div>
+    </section>
+
+    <section id="travel" class="page-section travel-section">
+      <div class="section-head reveal"><span class="eyebrow">FROM HERE</span><h2>Jijel → Alger → the world.</h2><p>Start local. Keep looking outward.</p></div>
+      <div class="map-board reveal">
+        <div class="route-line"></div>
+        <button class="map-pin pin-jijel" data-destination="jijel"><span></span>JIJEL</button>
+        <button class="map-pin pin-alger" data-destination="alger"><span></span>ALGER</button>
+        <button class="map-pin pin-world" data-destination="world"><span></span>ELSEWHERE</button>
+        <div class="map-label">MEDITERRANEAN / 36°N</div>
+      </div>
+      <div class="destination-grid">
+        <article class="destination reveal" data-destination="jijel"><div class="dest-img jijel-img"></div><div><small>STARTING POINT</small><h3>Jijel</h3><p>Sea, hills, roads, familiar places. The part of the map that doesn't need explaining.</p><button class="text-btn" data-modal="jijel">OPEN NOTES ↗</button></div></article>
+        <article class="destination reveal" data-destination="alger"><div class="dest-img alger-img"></div><div><small>THE CAPITAL</small><h3>Alger</h3><p>A different scale, different pace, still the same country under the same sky.</p><button class="text-btn" data-modal="alger">OPEN NOTES ↗</button></div></article>
+        <article class="destination reveal" data-destination="world"><div class="dest-img world-img"></div><div><small>NO FIXED LIST</small><h3>The world</h3><p>Italy, Scotland, Albania and whatever else makes a good excuse to leave the usual route.</p><button class="text-btn" data-modal="world">OPEN NOTES ↗</button></div></article>
+      </div>
+    </section>
+
+    <section id="tech" class="page-section tech-section">
+      <div class="section-head reveal"><span class="eyebrow">THE WORKBENCH</span><h2>Tech.</h2><p>Not skill percentages. Things I actually spend time messing with.</p></div>
+      <div class="tech-layout">
+        <div class="desk reveal">
+          <div class="desk-screen"><div class="terminal"><span>anis@jijel:~$</span> whoami<br><b>computer science student</b><br><span>anis@jijel:~$</span> ls interests/<br><b>c_cpp&nbsp;&nbsp; python&nbsp;&nbsp; web&nbsp;&nbsp; ai&nbsp;&nbsp; bots&nbsp;&nbsp; git</b><br><span>anis@jijel:~$</span><i class="blink">_</i></div></div>
+          <div class="desk-items"><span>DELL</span><span>SSD</span><span>PS</span><span>VS CODE</span></div>
+        </div>
+        <div id="tech-grid" class="tech-grid reveal"></div>
+      </div>
+      <div class="code-wall reveal"><div class="code-label">THINGS I'M LEARNING / BUILDING / BREAKING</div><pre>int main() {
+    learn();
+    build();
+    break_it();
+    fix_it();
+    repeat();
+}</pre><button class="solid-btn" data-modal="coding">WHAT I ACTUALLY DO ↗</button></div>
+    </section>
+
+    <section id="rest" class="page-section rest-section">
+      <div class="section-head reveal"><span class="eyebrow">EVERYTHING ELSE</span><h2>The rest.</h2><p>The categories that don't deserve their own résumé section.</p></div>
+      <div class="rest-grid">
+        <button class="rest-card gym reveal" data-modal="gym"><span>01</span><strong>GYM</strong><small>TRAIN / EAT / REPEAT</small></button>
+        <button class="rest-card gaming reveal" data-modal="gaming"><span>02</span><strong>GAMING</strong><small>PC / PLAYSTATION / ESCAPE</small></button>
+        <button class="rest-card study reveal" data-modal="study"><span>03</span><strong>STUDY</strong><small>INFORMATIQUE / MATHS</small></button>
+        <button class="rest-card faith reveal" data-modal="faith"><span>04</span><strong>MUSLIM FIRST</strong><small>FAITH / LIFE</small></button>
+      </div>
+      <div class="final-wall reveal"><div class="scribble">i don't have a clean category for myself.</div><h3>good.</h3><p>That would make this website boring.</p><button class="outline-btn" data-scroll="home">BACK TO THE TOP ↑</button></div>
+    </section>
+  </main>
+
+  <footer><span>ANIS / JIJEL, ALGERIA</span><span>built as a personal archive, not a résumé.</span></footer>
+
+  <div id="modal" class="modal" aria-hidden="true"><div class="modal-backdrop" data-close></div><article class="modal-box"><button class="modal-close" data-close>×</button><div id="modal-content"></div></article></div>
+  <script src="script.js"></script>
+</body>
+</html>
